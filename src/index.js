@@ -33,7 +33,7 @@ const calculateOrderAmount = (items) => {
       const {price , cartQuanity} = item
       let cartItemsAmout = price * cartQuanity
       return array.push(cartItemsAmout)
-      
+
   })
 
   const totalAmount = array.reduce((a, b) => {
@@ -88,7 +88,3 @@ app.get('/check' , (req , res) => {
 
 const PORT = process.env.PORT || 4240
 app.listen(PORT, () => console.log(`Node server listening on port ${PORT}!`));
-
-
-
-
