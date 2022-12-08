@@ -8,9 +8,7 @@ const bodyParser = require('body-parser')
 //This is your test secret API key.
 const stripe = require("stripe")(process.env.STRIPE_PRIVATE_KEY);
 
-app.use(cors({
-  origin: ["http://localhost:3000", 'https://apnastoree-26ebe.web.app/']
-}))
+app.use(cors())
 app.use(express.json())
 
 
