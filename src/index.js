@@ -9,7 +9,7 @@ const bodyParser = require('body-parser')
 const stripe = require("stripe")(process.env.STRIPE_PRIVATE_KEY);
 
 app.use(cors({
-  origin: "http://localhost:3000"
+  origin: ["http://localhost:3000", 'https://www.google.com/']
 }))
 app.use(express.json())
 
